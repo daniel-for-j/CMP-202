@@ -9,7 +9,7 @@ public class User {
 
     String register(){
         if (name.equals("") & password.equals("")){
-            System.out.println("Cannot be empty")
+            return "Cannot be empty";
         }
         else {
            return "Registered Successfully";
