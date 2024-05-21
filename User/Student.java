@@ -2,22 +2,22 @@ public class Student extends User{
  String matric_no;
  int admission_no;
 
- String registerCourse(String courseName, int courseCode, int courseUnit){
+ public static void  registerCourse(String courseName, int courseCode, int courseUnit){
     System.out.println("Course Name: " + courseName);
     System.out.println("Course Code: " + courseCode);
     System.out.println("Course Unit: " + courseUnit);
 
-    return  "Course registered Successfully. See Details below";
+    System.out.println("Course registered Successfully. See Details Above");
 
  }   
 
- String checkResult(String matric_no){
+ public static void checkResult(String matric_no){
     Student newStudent = new Student();
     if(newStudent.login().equals("Logged In")){
-        return "Open results";
+       System.out.println("Open results");
     }
     else {
-        return "Incorrect Info";
+       System.out.println("Incorrect Info");
     }
  }
 }

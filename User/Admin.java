@@ -2,7 +2,8 @@ public class Admin extends User{
 String staffNo;
 
 String uploadResult(String course,float score){
-    System.out.println(course + " " + score);
+    String output = course + " " + score;
+    return output;
 }
 
 }
